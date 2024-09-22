@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Label</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .label-card {
+        background-color: #fff;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-size: 14px;
+        height: 18.5mm;
+        width: 39.8mm;
+        overflow: hidden;
+      }
+      .brand {
+        padding: 2px 5px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        height: 4mm;
+      }
+      .brand h2 {
+        font-size: 15px;
+        color: #000;
+      }
+
+      .brand p {
+        color: black;
+        font-size: 3px;
+        line-height: 5px;
+      }
+      .product-info {
+        padding: 1px 5px;
+        max-height: 23.5mm;
+        min-height: 30px;
+        overflow: hidden;
+      }
+      .product-info p {
+        font-size: 5px;
+        white-space: nowrap;
+        line-height: 7px;
+      }
+      .up {
+        align-items: center;
+        display: flex;
+      }
+
+      .icons span {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .down .barcode {
+        width: 120px;
+        height: 10px;
+      }
+      .product-info .trash {
+        width: 50px;
+      }
+      .icons {
+        float: right;
+      }
+      .icons img {
+        width: 50px;
+        height: 20px;
+      }
+      .symb {
+        font-size: 15px;
+        line-height: 0;
+      }
+      .amp {
+        display: flex;
+        align-items: center;
+      }
+      .brand {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
+      .brand .brand_img {
+        width: 50px;
+        height: 10px;
+      }
+      .down {
+        min-height: 100%;
+
+        padding: 0 5px;
+        font-size: 5px;
+        overflow: hidden;
+        line-height: 7px;
+      }
+
+      .country {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="label-card box">
+      <div class="brand">
+        <img class="brand_img" src="./brand.png" alt="" />
+        <div>
+          <p>艾体威尔电子技术（北京）有限公司</p>
+          <p>Vanstone Electronic (Beijing) Co., Ltd.</p>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="up">
+          <div>
+            <p>Name : Cloud Soundbox</p>
+            <p>Model : Q181 mini</p>
+            <p class="amp">Input : 5V <span class="symb">⎓</span> 1A</p>
+            <p>P/N : C16B-0430-0401-4EN-82C(4G)(L)</p>
+          </div>
+          <div class="icons">
+            <img class="" src="./icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="down">
+        <img class="barcode" src="https://i.postimg.cc/52sfnYgV/barcode.jpg" alt="" />
+        <div class="country">
+          <p>S/N : 00067XXXXXX</p>
+          <p>Made in India</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
